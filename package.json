@@ -1,0 +1,23 @@
+{
+  "name": "Playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.spec.js",
+  "scripts":{
+    "main": "node tests/main.js"
+
+  },
+  
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  },
+  "dependencies": {
+    "node": "^19.6.0"
+  }
+}
