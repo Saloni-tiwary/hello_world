@@ -13,7 +13,15 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    - name: checkout
     - uses: actions/checkout@v3
+    - name: Deploy to App Engine
+      id: deploy
+      uses: google-github-actions/deploy-appengine@v0.2.0
+      with:
+        version: v1
+        project_id: new-application-hello-world
+        credentials: ${{ secrets.SERVICE_ACCOUNT_KEY }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
