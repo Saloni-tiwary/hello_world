@@ -6,16 +6,12 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    #strategy:
-      #matrix:
-        #node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+ 
 
     steps:
     - name: checkout
-    - uses: actions/checkout@v3
-    - id: 'auth'
+      uses: actions/checkout@v3
+      id: 'auth'
     - name: Deploy to App Engine
       id: deploy
       uses: google-github-actions/deploy-appengine@v0.2.0
