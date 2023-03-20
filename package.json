@@ -1,8 +1,8 @@
 {
-  "name": "Playwright",
+  "name": "node-hello-world",
   "version": "1.0.0",
   "description": "",
-  "main": "login.spec.js",
+  "main": "main.js",
   "scripts":{
     "main": "node tests/main.js"
 
