@@ -10,17 +10,12 @@
   "repository":{
     "type":"git",
     "url":"git+https://github.com/Saloni-tiwary/hello_world.git"
+   }
   
-  "keywords": [
-    "npm",
-    "scripts"
-  ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.30.0"
-  },
-  "dependencies": {
-    "node": "^19.6.0"
-  }
+  "bugs":{
+     "url":"https://github.com/Saloni-tiwary/hello_world/issues"
+   }
+   
 }
