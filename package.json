@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "scripts":{
-    "main": "node tests/main.js"
-
-  },
+  
   "repository":{
     "type":"git",
     "url":"git+https://github.com/Saloni-tiwary/hello_world.git"
-   }
+   },
   
   "author": "",
   "license": "ISC",
