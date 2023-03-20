@@ -2,5 +2,5 @@ name: hello-world
 description: Saying hello to the world
 
 runs:
-  using: node14
+  using: node16
   main: main.js
