@@ -1,15 +1,6 @@
 name: hello-world
+description: Saying hello to the world
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ./
- 
+runs:
+  using: node14
+  main: main.js
