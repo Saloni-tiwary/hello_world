@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-  res.send('messy world');
+  res.send('Hello world');
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
