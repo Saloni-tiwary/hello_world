@@ -6,6 +6,9 @@
   "scripts":{
      "main": "node main.js"
   },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   
   "repository":{
     "type":"git",
