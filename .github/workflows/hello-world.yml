@@ -12,6 +12,8 @@ jobs:
     - name: checkout
       uses: actions/checkout@v3
       id: 'auth'
+    - name: install dependencies
+      run: npm install
     - name: Deploy to App Engine
       id: deploy
       uses: google-github-actions/deploy-appengine@v0.2.0
