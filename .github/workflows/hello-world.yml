@@ -15,23 +15,13 @@ jobs:
     steps:
     - name: checkout
     - uses: actions/checkout@v3
+    - id: 'auth'
     - name: Deploy to App Engine
-      
+      id: deploy
       uses: google-github-actions/deploy-appengine@v0.2.0
       with:
-        deliverables: app.yaml 
+        
         version: v1
-        project_id: new-application-hello-world
-        credentials: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-    #- name: Use Node.js ${{ matrix.node-version }}
-      #uses: actions/setup-node@v3
-      #with:
-       # node-version: ${{ matrix.node-version }}
-        #cache: 'npm'
-    #- run: npm install
-    #- run: npm install express
-    #- run: npm run main
+        project_id:  ${{ secrets.PROJECT_ID}}
+        credentials: ${{ secrets.SERVICE_ACCOUNT_KEY}}
     
-         
-    
- 
