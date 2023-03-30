@@ -1,13 +1,17 @@
-const express = require('express');
-const app = express();
+ const http = require('http');
 
-
-app.get('/', (req, res) => {
-  res.send('Hello world');
+const server = http.createServer((req, res) => {
+  if (req.url === '/api/hello-world') {
+    res.setHeader('Content-Type', 'application/json');
+    res.statusCode = 200;
+    res.end(JSON.stringify({ message: 'Hello, World!' }));
+  } else {
+    res.statusCode = 404;
+    res.end('Page not found!');
+  }
 });
 
-// Listen to the App Engine-specified port, or 8080 otherwise
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Server listening on port http://127.0.0.1:${PORT}`);
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
